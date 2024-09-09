@@ -18,7 +18,7 @@
             href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
             rel="stylesheet" />
     </head>
-    <body class="overflow-x-hidden">
+    <body class="overflow-x-hidden" style="user-select: none">
         <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
             <img
                 class="w-full"
@@ -29,11 +29,11 @@
             class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
             <a href="#top">
                 <h1
-                    style="font-family: Pacifico; user-select: none"
+                    style="font-family: Pacifico"
                     class="logo w-28 cursor-pointer mr-10 text-4xl">
-                    i<span style="font-size: 70px; color: #0eb1d2">.</span
-                    >m<span style="font-size: 70px; color: #0eb1d2">.</span
-                    >nomee<span style="font-size: 70px; color: #0eb1d2">.</span>
+                    i<span style="font-size: 70px; color: #439cfb">.</span
+                    >m<span style="font-size: 70px; color: #439cfb">.</span
+                    >nomee<span style="font-size: 70px; color: #439cfb">.</span>
                 </h1>
             </a>
             <!-- <img src="./images/logo.png" alt="Logo" /> -->
@@ -84,25 +84,47 @@
             </ul>
         </nav>
         <!-- header -->
-        <header>
-            <div
-                class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <header
+            class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+            <img
+                class="rounded-full w-32"
+                src="./images/profile-img.png"
+                alt="profile" />
+            <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3">
+                Hello! I'm Nomee
                 <img
-                    class="rounded-full w-32"
-                    src="./images/profile-img.png"
-                    alt="profile" />
-                <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3">
-                    Hello! I'm Nomee
+                    class="w-6"
+                    src="./images/hand-icon.png"
+                    alt="hand emoji" />
+            </h3>
+            <h1 class="text-3xl sm:text-6xl">
+                full stack web developer based in Pakistan.
+            </h1>
+            <p class="max-w-2xl mx-auto text-xl">
+                I am a full stack developer from Rawalpindi, Pakistan with over
+                5 years of experience in multiple tools and Languages.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+                <a
+                    class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#439cfb] to-[#f187fb] text-white flex items-center gap-2 text-xl"
+                    href="#contact"
+                    >Contact me
                     <img
-                        class="w-6"
-                        src="./images/hand-icon.png"
-                        alt="hand emoji" />
-                </h3>
-                <h1>full stack web developer based in Pakistan.</h1>
-                <p>
-                    I am a full stack developer from Rawalpindi, Pakistan with
-                    over 5 years of experience in multiple tools and Languages.
-                </p>
+                        class="w-4"
+                        src="./images/right-arrow-white.png"
+                        alt="contact arrow"
+                /></a>
+                <a
+                    class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 text-xl bg-white"
+                    href="./images/logo.png"
+                    target="_blank"
+                    download
+                    >My Resume
+                    <img
+                        class="w-4"
+                        src="./images/download-icon.png"
+                        alt="download"
+                /></a>
             </div>
         </header>
         <script src="./app.js"></script>
