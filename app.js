@@ -16,7 +16,8 @@ window.addEventListener('scroll', () => {
             'bg-opacity-50',
             'backdrop-blur-lg',
             'shadow-md',
-            'duration-500'
+            'duration-500',
+            'dark:bg-darkTheme'
         );
         linksList.classList.remove('bg-white', 'shadow-sm', 'bg-opacity-50');
     } else {
@@ -30,3 +31,23 @@ window.addEventListener('scroll', () => {
         linksList.classList.add('bg-white', 'shadow-sm', 'bg-opacity-50');
     }
 });
+
+// LIGHT MODE AND DARK MODE
+if (
+    localStorage.theme === 'dark' ||
+    (!('theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+) {
+    document.documentElement.classList.add('dark');
+} else {
+    document.documentElement.classList.remove('dark');
+}
+
+function toggleTheme() {
+    document.documentElement.classList.toggle('dark');
+    if (document.documentElement.classList.contains('dark')) {
+        localStorage.theme = 'dark';
+    } else {
+        localStorage.theme = 'light';
+    }
+}
