@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
     <head>
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
         <meta charset="UTF-8" />
@@ -10,16 +10,19 @@
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer" />
-        <title>Noman Rafiq - Portfolio</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="./tailwind.config.js"></script>
+
+        <title>Noman Rafiq - Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Oldenburg&family=Pacifico&display=swap"
             rel="stylesheet" />
     </head>
-    <body class="overflow-x-hidden" style="user-select: none">
+    <body
+        class="overflow-x-hidden font-Cabin leading-7"
+        style="user-select: none">
         <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
             <img
                 class="w-full"
@@ -40,7 +43,7 @@
             </a>
             <!-- <img src="./images/logo.png" alt="Logo" /> -->
             <ul
-                class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+                class="font-Oldenburg hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
                 <li><a href="#top">Home</a></li>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#services">Services</a></li>
@@ -53,7 +56,7 @@
                 </button>
                 <a
                     href="#contact"
-                    class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
+                    class="font-Oldenburg hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
                     >Contact
                     <img
                         class="w-3"
@@ -71,7 +74,7 @@
             <!-- mobile menu -->
             <ul
                 id="sideMenu"
-                class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-52 z-50 h-screen bg-rose-50 transition gap-4">
+                class="font-Oldenburg flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-52 z-50 h-screen bg-rose-50 transition gap-4">
                 <div class="absolute right-6 top-6" onclick="closeMenu()">
                     <img
                         class="w-5"
@@ -92,17 +95,18 @@
                 class="rounded-full w-32"
                 src="./images/profile-img.png"
                 alt="profile" />
-            <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3">
+            <h3
+                class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Oldenburg">
                 Hello! I'm Nomee
                 <img
                     class="w-6"
                     src="./images/hand-icon.png"
                     alt="hand emoji" />
             </h3>
-            <h1 class="text-3xl sm:text-6xl">
+            <h1 class="font-Oldenburg text-3xl sm:text-6xl sm:mb-3">
                 full stack web developer based in Pakistan.
             </h1>
-            <p class="max-w-2xl mx-auto text-xl">
+            <p class="max-w-2xl mx-auto text-xl font-Oldenburg leading-loose">
                 I am a full stack developer from Rawalpindi, Pakistan with over
                 5 years of experience in multiple tools and Languages.
             </p>
@@ -131,8 +135,10 @@
         </header>
         <!-- about me -->
         <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
-            <h4 class="text-center mb-2 text-lg">Introduction</h4>
-            <h2 class="text-center text-5xl">About me</h2>
+            <h4 class="text-center mb-2 text-lg font-Oldenburg">
+                Introduction
+            </h4>
+            <h2 class="text-center text-5xl font-Oldenburg">About me</h2>
             <div
                 class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
                 <div class="max-w-max mx-auto relative">
@@ -140,20 +146,21 @@
                         class="w-64 sm:w-80 rounded-3xl max-w-none"
                         src="./images/user-image.png"
                         alt="user" />
+                    <!-- Circular Text with animation -->
                     <div
-                        class="bg-white w-1/2 aspect-square absolute left-0 top-0 rounded-full -translate-x-1/4 -translate-y-1/3 shadow-[0_4px_55px_rgba(0,0,0,0.15)] flex items-center justify-center">
+                        class="bg-white w-1/2 aspect-square absolute left-0 top-0 rounded-full -translate-x-1/3 -translate-y-1/3 shadow-[2px_2px_2px_#0002] flex items-center justify-center">
                         <img
-                            class="w-full"
+                            class="w-full animate-spin_slow"
                             src="./images/circular-text.png"
                             alt="" />
                         <img
                             class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                            src="./images/dev-icon.png"
+                            src="./images/favicon-32x32.png"
                             alt="dev" />
                     </div>
                 </div>
                 <div class="flex-1">
-                    <p class="mb-10 max-w-2xl">
+                    <p class="mb-10 max-w-2xl font-Oldenburg">
                         I am an experienced Full Stack Developer with over 5
                         years of professional experience. Throught my career, I
                         have had the privilege of collaborating with prestigious
@@ -161,7 +168,7 @@
                     </p>
                     <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
                         <li
-                            class="border border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                            class="border border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
                             <img
                                 class="w-7 mt-3"
                                 src="./images/code-icon.png"
@@ -174,7 +181,7 @@
                             </p>
                         </li>
                         <li
-                            class="border border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                            class="border border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
                             <img
                                 class="w-7 mt-3"
                                 src="./images/edu-icon.png"
@@ -187,7 +194,7 @@
                             </p>
                         </li>
                         <li
-                            class="border border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                            class="border border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
                             <img
                                 class="w-7 mt-3"
                                 src="./images/project-icon.png"
@@ -200,7 +207,9 @@
                             </p>
                         </li>
                     </ul>
-                    <h4 class="my-6 text-gray-700">Tools I use</h4>
+                    <h4 class="my-6 text-gray-700 font-Oldenburg">
+                        Tools I use
+                    </h4>
                     <ul class="flex items-center gap-3 sm:gap-5">
                         <li
                             class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
@@ -243,9 +252,11 @@
         </div>
         <!-- services -->
         <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
-            <h4 class="text-center mb-2 text-lg">What I offer</h4>
-            <h2 class="text-center text-5xl">My services</h2>
-            <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+            <h4 class="text-center mb-2 text-lg font-Oldenburg">
+                What I offer
+            </h4>
+            <h2 class="text-center text-5xl font-Oldenburg">My services</h2>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Oldenburg">
                 I am an experienced Full Stack Developer with over 5 years of
                 professional experience. Throught my career, I have had the
                 privilege of collaborating with prestigious organizations,
@@ -254,7 +265,7 @@
             <div
                 class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-10">
                 <div
-                    class="border broder-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                    class="border broder-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
                     <img
                         src="./images/web-icon.png"
                         alt="web icon"
@@ -273,7 +284,7 @@
                     /></a>
                 </div>
                 <div
-                    class="border broder-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                    class="border broder-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
                     <img
                         src="./images/mobile-icon.png"
                         alt="web icon"
@@ -292,7 +303,7 @@
                     /></a>
                 </div>
                 <div
-                    class="border broder-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                    class="border broder-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
                     <img
                         src="./images/ui-icon.png"
                         alt="web icon"
@@ -311,7 +322,7 @@
                     /></a>
                 </div>
                 <div
-                    class="border broder-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+                    class="border broder-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500">
                     <img
                         src="./images/graphics-icon.png"
                         alt="web icon"
@@ -333,9 +344,11 @@
         </div>
         <!-- my work -->
         <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
-            <h4 class="text-center mb-2 text-lg">My portfolio</h4>
-            <h2 class="text-center text-5xl">My Latest work</h2>
-            <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+            <h4 class="text-center mb-2 text-lg font-Oldenburg">
+                My portfolio
+            </h4>
+            <h2 class="text-center text-5xl font-Oldenburg">My Latest work</h2>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Oldenburg">
                 Welcome to my web development portfolio! Explore the collection
                 of projects showcasing my expertise in full stack development.
             </p>
@@ -351,7 +364,7 @@
                             <p class="text-sm text-gray-700">Web Design</p>
                         </div>
                         <div
-                            class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300">
+                            class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-black group-hover:bg-lime-300">
                             <img
                                 class="w-5"
                                 src="./images/send-icon.png"
@@ -365,11 +378,11 @@
                     <div
                         class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
-                            <h2 class="font-semibold">Front End</h2>
-                            <p class="text-sm text-gray-700">Web Design</p>
+                            <h2 class="font-semibold">Geo based apps</h2>
+                            <p class="text-sm text-gray-700">Mobile Apps</p>
                         </div>
                         <div
-                            class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300">
+                            class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-black group-hover:bg-lime-300">
                             <img
                                 class="w-5"
                                 src="./images/send-icon.png"
@@ -383,11 +396,11 @@
                     <div
                         class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
-                            <h2 class="font-semibold">Front End Project</h2>
+                            <h2 class="font-semibold">Photography site</h2>
                             <p class="text-sm text-gray-700">Web Design</p>
                         </div>
                         <div
-                            class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300">
+                            class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-black group-hover:bg-lime-300">
                             <img
                                 class="w-5"
                                 src="./images/send-icon.png"
@@ -401,11 +414,11 @@
                     <div
                         class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
-                            <h2 class="font-semibold">Front End Project</h2>
-                            <p class="text-sm text-gray-700">Web Design</p>
+                            <h2 class="font-semibold">UI/UX Designing</h2>
+                            <p class="text-sm text-gray-700">Ui/UX Design</p>
                         </div>
                         <div
-                            class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300">
+                            class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-black group-hover:bg-lime-300">
                             <img
                                 class="w-5"
                                 src="./images/send-icon.png"
@@ -416,7 +429,7 @@
             </div>
             <a
                 href="#"
-                class="w-max flex items-center justify-center gap-2 text-gray-700 border border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500 hover:-translate-y-1"
+                class="w-max flex items-center justify-center gap-2 text-gray-700 border border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 hover:-translate-y-1"
                 >Show more
                 <img
                     class="w-4"
@@ -429,9 +442,9 @@
         <div
             id="contact"
             class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
-            <h4 class="text-center mb-2 text-lg">Contact Me</h4>
-            <h2 class="text-center text-5xl">Get in touch</h2>
-            <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+            <h4 class="text-center mb-2 text-lg font-Oldenburg">Contact Me</h4>
+            <h2 class="text-center text-5xl font-Oldenburg">Get in touch</h2>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Oldenburg">
                 I'd love to hear from you! If you have any questions, comments
                 or feedback, please use the form below.
             </p>
@@ -482,7 +495,7 @@
                 class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
                 <p>&copy; 2024 Nomee. All rights reserved.</p>
                 <ul
-                    class="flex items-center justify-between gap-10 mt-4 sm:mt-1">
+                    class="flex items-center justify-between gap-10 mt-4 sm:mt-1 font-Oldenburg">
                     <li>
                         <a href="#">Instagram</a>
                     </li>
@@ -493,7 +506,7 @@
                         <a href="#">LinkedIn</a>
                     </li>
                     <li>
-                        <a href="#">Twitter (X)</a>
+                        <a href="#">Twitter</a>
                     </li>
                 </ul>
             </div>

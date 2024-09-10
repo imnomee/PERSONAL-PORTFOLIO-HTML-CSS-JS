@@ -12,7 +12,7 @@ const linksList = document.querySelector('nav ul');
 window.addEventListener('scroll', () => {
     if (scrollY > 50) {
         navBar.classList.add(
-            `bg-white`,
+            'bg-white',
             'bg-opacity-50',
             'backdrop-blur-lg',
             'shadow-md',
